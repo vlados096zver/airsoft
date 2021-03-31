@@ -321,7 +321,7 @@ img {
 }
 
 .breadcrumbs__list li a:hover {
-	color: #1B58B1;
+	color: var(--hover--header-link);
 }
 
 .breadcrumbs__list li a:after {
