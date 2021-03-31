@@ -1,0 +1,122 @@
+@import 'responsive'
+
+.main-footer
+	padding-bottom: 30px
+	&__socials
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: 0 -24px
+		padding-bottom: 64px
+		+media(md)
+			padding-bottom: 58px
+		+media(sm)
+			margin: 0 -14px	
+			padding-bottom: 35px
+
+	&__item
+		cursor: pointer
+		margin: 0 24px	
+		margin-bottom: 15px
+		+media(sm)
+			margin: 0 14px	
+			margin-bottom: 15px
+		svg
+			height: 50px
+			fill: var(--social-icon)
+			transition: 0.3s fill
+			+media(sm)
+				width: 40px
+				height: 40px
+			&:hover
+				fill: var(--social-hover)
+
+	&__list
+		display: flex
+		justify-content: center
+		align-items: center
+		padding-bottom: 40px
+		+media(smx)
+			flex-direction: column
+			padding-bottom: 20px
+		li:not(:last-child)
+			margin-right: 35px
+			+media(smx)
+				margin-right: 0px
+
+	&__link
+		display: block
+		font-size: 14px
+		line-height: 1.2
+		text-transform: uppercase
+		color: var(--color-dark1)
+		margin-bottom: 20px
+		transition: 0.3s color
+		+media(smx)
+			margin-bottom: 20px
+		&--active
+			position: relative
+			&:after
+				position: absolute
+				content: ' '
+				top: -16px
+				left: calc(50% - 10px)
+				width: 20px
+				height: 7px
+				background-color: var(--hover--like)
+				border-radius: 7px
+				+media(smx)	
+					width: 100%
+					left: 0px
+					top: 22px
+					height: 4px
+
+		&:hover:not(.main-footer__link--active)
+			color: #1B58B1
+		
+	&__logo
+		display: block
+		max-width: 190px
+		width: 100%
+		margin: 0 auto
+		margin-bottom: 54px
+		+media(sm)
+			margin-bottom: 45px
+		svg
+			display: block
+			fill: var(--color--logo)
+
+	&__desc
+		p
+			font-size: 14px
+			line-height: 1.2
+			color: var(--info-block)
+			text-align: center
+			text-transform: uppercase
+			font-weight: 300
+		a
+			color: #808080
+			transition: 0.3s color
+			&:hover
+				color: #014659
+
+.msg-modal
+	position: fixed
+	top: 30%
+	left: calc(50% - 150px)
+	width: 300px
+	padding: 20px 30px
+	border-radius: 15px
+	text-align: center
+	background-color: #1B58B1
+	color: #fff
+	opacity: 0
+	visibility: hidden
+	font-size: 18px
+	line-height: 1.5
+	border-radius: 5px
+	z-index: 20
+	transition: 0.3s visibility, 0.3s opacity
+	&-active
+		opacity: 1
+		visibility: visible

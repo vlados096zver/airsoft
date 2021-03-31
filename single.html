@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Airsoft</title>
+
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<svg class="svg-about">
+	<g id="icon-like">
+		<path d="M2.1739 8.69568C0.975653 8.69568 0 9.67133 0 10.8696V17.8261C0 19.0244 0.975653 20 2.1739 20H4.7826C5.27218 20 5.72259 19.8348 6.08695 19.56V8.69568H2.1739Z"/>
+		<path d="M20.8696 11.9565C20.8696 11.4339 20.6626 10.947 20.3035 10.5878C20.7096 10.1435 20.9165 9.5478 20.86 8.92782C20.7583 7.82259 19.7626 6.9565 18.5922 6.9565H13.2209C13.487 6.14866 13.913 4.66782 13.913 3.47825C13.913 1.59216 12.3104 0 11.3043 0C10.4009 0 9.75564 0.508696 9.72784 0.529566C9.62524 0.612188 9.56524 0.737406 9.56524 0.869553V3.81824L7.06089 9.24348L6.95654 9.29651V18.6165C7.66436 18.9504 8.56 19.1304 9.13045 19.1304H17.1122C18.0592 19.1304 18.8879 18.4922 19.0826 17.6113C19.1826 17.1583 19.1244 16.7017 18.9253 16.3052C19.5679 15.9817 20 15.32 20 14.5652C20 14.2574 19.9296 13.9626 19.7957 13.6957C20.4383 13.3722 20.8696 12.7104 20.8696 11.9565Z"/></g>
+	<g id="icon-telegram">
+		<path d="M58.1854 1.36887C57.4635 0.48605 56.3823 0 55.1406 0C54.4656 0 53.7505 0.142028 53.0156 0.422926L2.99034 19.5191C0.335548 20.5322 -0.0220004 22.0526 0.000994515 22.8687C0.0239894 23.6848 0.467205 25.1826 3.1752 26.0442C3.19143 26.0492 3.20766 26.0542 3.22389 26.0587L13.6005 29.0282L19.2121 45.075C19.9773 47.2627 21.6947 48.6217 23.6948 48.6217C24.9559 48.6217 26.1963 48.0932 27.282 47.0941L33.7003 41.1844L43.0096 48.6803C43.0105 48.6812 43.0119 48.6816 43.0128 48.6825L43.1012 48.7538C43.1093 48.7601 43.1178 48.7668 43.126 48.7732C44.1607 49.5757 45.2902 49.9995 46.3935 50H46.3939C48.5496 50 50.2661 48.4043 50.7661 45.9353L58.9627 5.46242C59.2918 3.8379 59.0159 2.38426 58.1854 1.36887ZM17.0718 28.4641L37.0914 18.2368L24.6259 31.4823C24.4216 31.6992 24.2769 31.9648 24.2056 32.2538L21.802 41.9901L17.0718 28.4641ZM24.9361 44.5466C24.8531 44.6228 24.7697 44.6909 24.6863 44.7535L26.9163 35.7215L30.9729 38.9881L24.9361 44.5466ZM55.5689 4.77483L47.3724 45.2482C47.2935 45.6355 47.0414 46.5368 46.3935 46.5368C46.0734 46.5368 45.6712 46.3623 45.2595 46.0453L34.7107 37.5516C34.7094 37.5503 34.7076 37.5489 34.7058 37.548L28.429 32.4936L46.4557 13.3389C47.0328 12.7257 47.0851 11.7865 46.5797 11.1129C46.0738 10.4392 45.1572 10.2273 44.4074 10.6106L14.7583 25.7575L4.24063 22.7483L54.2505 3.658C54.673 3.49658 54.9679 3.46277 55.1406 3.46277C55.2465 3.46277 55.435 3.47539 55.5049 3.56151C55.5969 3.67378 55.7141 4.05658 55.5689 4.77483Z"/>
+	</g>
+	<g id="icon-instagram">
+		<path d="M25.4922 50C25.3266 50 25.1611 50 24.9943 49.9992C21.0751 50.0088 17.4538 49.9092 13.9321 49.6948C10.7033 49.4984 7.75606 48.3826 5.40849 46.4683C3.14332 44.6213 1.59646 42.1238 0.811007 39.0461C0.127411 36.3666 0.0911715 33.7364 0.0564577 31.1923C0.0312806 29.367 0.00534059 27.2041 0 25.0045C0.00534059 22.7958 0.0312806 20.6329 0.0564577 18.8075C0.0911715 16.2639 0.127411 13.6336 0.811007 10.9538C1.59646 7.87609 3.14332 5.3786 5.40849 3.53152C7.75606 1.6173 10.7033 0.501494 13.9325 0.305036C17.4542 0.0910313 21.0763 -0.00891411 25.0039 0.00062267C28.9243 -0.00776969 32.5444 0.0910313 36.0662 0.305036C39.2949 0.501494 42.2422 1.6173 44.5897 3.53152C46.8553 5.3786 48.4018 7.87609 49.1872 10.9538C49.8708 13.6332 49.9071 16.2639 49.9418 18.8075C49.967 20.6329 49.9933 22.7958 49.9982 24.9954C49.9933 27.2041 49.967 29.367 49.9418 31.1923C49.9273 32.2711 49.0362 33.1333 47.9623 33.1188C46.8835 33.1039 46.0214 32.2174 46.0359 31.1389C46.0607 29.3243 46.087 27.1755 46.092 24.9954C46.087 22.8244 46.0607 20.6756 46.0359 18.8609C46.0042 16.545 45.9714 14.1501 45.4023 11.9197C44.8282 9.66976 43.7242 7.86617 42.1212 6.55887C40.3875 5.14476 38.2703 4.35244 35.8289 4.20405C32.3899 3.995 28.8499 3.89849 25.0039 3.9065C21.1487 3.89735 17.6083 3.995 14.1694 4.20405C11.7279 4.35244 9.61116 5.14476 7.87699 6.55849C6.27405 7.86579 5.17007 9.66938 4.59596 11.9197C4.02681 14.1501 3.994 16.545 3.96234 18.8609C3.93754 20.6756 3.9116 22.8244 3.90626 25.0045C3.9116 27.1755 3.93754 29.3243 3.96234 31.1389C3.994 33.4548 4.02681 35.8497 4.59596 38.0802C5.17007 40.3301 6.27405 42.1337 7.87699 43.441C9.61116 44.8551 11.7279 45.6474 14.1694 45.7958C17.6083 46.0049 21.1495 46.1025 24.9947 46.093C28.8503 46.1021 32.3899 46.0049 35.8289 45.7958C38.2703 45.6474 40.3871 44.8551 42.1212 43.441C43.276 42.4991 44.1781 41.2906 44.8026 39.8487C45.2314 38.8591 46.3811 38.4041 47.371 38.8328C48.361 39.2616 48.8157 40.4114 48.3873 41.4013C47.5118 43.4227 46.2343 45.1275 44.5897 46.4683C42.2422 48.3829 39.2949 49.4984 36.0662 49.6948C32.6936 49.9001 29.2291 50 25.4922 50ZM37.1083 24.9999C37.1083 18.2689 31.6323 12.7929 24.9013 12.7929C18.1706 12.7929 12.6942 18.2689 12.6942 24.9999C12.6942 31.731 18.1706 37.207 24.9013 37.207C31.6323 37.207 37.1083 31.731 37.1083 24.9999ZM33.2021 24.9999C33.2021 29.5768 29.4785 33.3007 24.9013 33.3007C20.3244 33.3007 16.6005 29.5768 16.6005 24.9999C16.6005 20.423 20.3244 16.6991 24.9013 16.6991C29.4785 16.6991 33.2021 20.423 33.2021 24.9999ZM38.4755 8.8866C36.8577 8.8866 35.5458 10.1981 35.5458 11.8163C35.5458 13.4345 36.8577 14.746 38.4755 14.746C40.0937 14.746 41.4052 13.4345 41.4052 11.8163C41.4052 10.1981 40.0937 8.8866 38.4755 8.8866Z"/>
+	</g>
+	<g id="icon-youtube">
+		<path d="M43.1679 22.0468L28.5838 14.067C27.7453 13.6082 26.7541 13.6253 25.9321 14.1124C25.1097 14.5999 24.6191 15.4611 24.6191 16.417V32.2396C24.6191 33.191 25.1067 34.0507 25.9236 34.5387C26.3502 34.7936 26.8231 34.9215 27.297 34.9215C27.7312 34.9215 28.1663 34.8142 28.5667 34.5987L43.1513 26.7564C44.0171 26.2905 44.5575 25.3905 44.5615 24.4069C44.5651 23.4233 44.0312 22.5192 43.1679 22.0468ZM28.4876 30.2492V18.4236L39.3876 24.3878L28.4876 30.2492Z"/>
+		<path d="M65.5284 11.8009L65.5254 11.7707C65.4695 11.2394 64.913 6.51315 62.6153 4.10925C59.9596 1.28178 56.9488 0.938293 55.5008 0.773601C55.381 0.760002 55.2712 0.747411 55.173 0.734316L55.0576 0.722229C46.3304 0.0876345 33.1505 0.00100729 33.0186 0.000503646L33.007 0L32.9954 0.000503646C32.8634 0.00100729 19.6835 0.0876345 10.8778 0.722229L10.7614 0.734316C10.6677 0.746908 10.5645 0.758491 10.4522 0.771586C9.02081 0.936782 6.04225 1.28077 3.37896 4.21048C1.19062 6.5887 0.55804 11.2137 0.49307 11.7334L0.485515 11.8009C0.465873 12.022 0 17.2856 0 22.5699V27.5097C0 32.7939 0.465873 38.0575 0.485515 38.2791L0.489041 38.3124C0.544945 38.8352 1.10097 43.4748 3.38803 45.8797C5.88511 48.6125 9.04247 48.9741 10.7408 49.1685C11.0092 49.1992 11.2404 49.2254 11.398 49.2531L11.5506 49.2742C16.5896 49.7537 32.3885 49.9899 33.0583 49.9995L33.0785 50L33.0986 49.9995C33.2306 49.999 46.41 49.9124 55.1372 49.2778L55.2525 49.2657C55.3628 49.2511 55.4867 49.238 55.6227 49.2239C57.046 49.0728 60.0085 48.759 62.635 45.8691C64.8233 43.4904 65.4564 38.8654 65.5209 38.3461L65.5284 38.2786C65.5481 38.057 66.0144 32.7939 66.0144 27.5097V22.5699C66.0139 17.2856 65.5481 12.0225 65.5284 11.8009ZM62.1454 27.5097C62.1454 32.4006 61.7183 37.4375 61.678 37.8999C61.5139 39.1736 60.8465 42.0998 59.7803 43.2587C58.1364 45.0673 56.4477 45.2466 55.2148 45.377C55.0657 45.3926 54.9277 45.4077 54.8028 45.4234C46.3617 46.0338 33.6793 46.1275 33.0951 46.131C32.4399 46.1214 16.8722 45.8832 11.9868 45.4294C11.7365 45.3886 11.466 45.3574 11.181 45.3252C9.73498 45.1595 7.75565 44.9328 6.23363 43.2587L6.19787 43.2204C5.15029 42.129 4.5021 39.3927 4.3374 37.915C4.30668 37.5655 3.86851 32.4691 3.86851 27.5097V22.5699C3.86851 17.6845 4.29459 12.6531 4.33589 12.1812C4.53181 10.6808 5.21173 7.93193 6.23363 6.82088C7.9279 4.95739 9.71433 4.7509 10.8959 4.61441C11.0087 4.60131 11.114 4.58923 11.2112 4.57663C19.7752 3.96319 32.5487 3.87203 33.007 3.86851C33.4653 3.87153 46.2342 3.96319 54.7222 4.57663C54.8264 4.58973 54.9403 4.60282 55.0627 4.61693C56.278 4.75543 58.1147 4.96495 59.8005 6.76296L59.8161 6.77958C60.8637 7.87099 61.5118 10.6551 61.6765 12.1626C61.7057 12.4924 62.1454 17.5999 62.1454 22.5699V27.5097Z"/>
+	</g>
+	<g id="icon-facebook">
+		<path d="M44.1406 0H5.85938C2.62852 0 0 2.62852 0 5.85938V44.1406C0 47.3715 2.62852 50 5.85938 50H44.1406C47.3715 50 50 47.3715 50 44.1406V5.85938C50 2.62852 47.3715 0 44.1406 0ZM46.0938 44.1406C46.0938 45.2176 45.2176 46.0938 44.1406 46.0938H33.0078V30.1758H39.042L40.0391 24.1211H33.0078V19.9219C33.0078 18.2642 34.2798 16.9922 35.9375 16.9922H39.9414V10.9375H35.9375C30.9646 10.9375 26.9553 14.9658 26.9553 19.9389V24.1211H21.0938V30.1758H26.9553V46.0938H5.85938C4.78242 46.0938 3.90625 45.2176 3.90625 44.1406V5.85938C3.90625 4.78242 4.78242 3.90625 5.85938 3.90625H44.1406C45.2176 3.90625 46.0938 4.78242 46.0938 5.85938V44.1406Z"/>
+	</g>
+	<g id="logo"> 
+		<path d="M36.47 38.219h-8.454L26.539 43h-6.592l9.387-25.594h5.8L44.593 43h-6.627l-1.494-4.781zm-6.978-4.764h5.502l-2.76-8.877-2.742 8.877zM53.047 43h-6.152V17.406h6.152V43zm13.799-9.035h-3.34V43h-6.17V17.406h10.072c3.035 0 5.408.674 7.12 2.022 1.71 1.347 2.566 3.252 2.566 5.713 0 1.78-.363 3.257-1.09 4.43-.715 1.171-1.84 2.12-3.375 2.847l5.344 10.318V43h-6.61l-4.517-9.035zm-3.34-4.764h3.902c1.172 0 2.051-.305 2.637-.914.598-.621.896-1.482.896-2.584 0-1.101-.298-1.963-.896-2.584-.598-.633-1.477-.95-2.637-.95h-3.902v7.032zm30.516 6.996c0-.902-.323-1.605-.967-2.11-.633-.503-1.752-1.025-3.358-1.564-1.605-.539-2.918-1.06-3.937-1.564-3.317-1.629-4.975-3.867-4.975-6.715 0-1.418.41-2.666 1.23-3.744.833-1.09 2.004-1.934 3.516-2.531 1.512-.61 3.211-.914 5.098-.914 1.84 0 3.486.328 4.94.984 1.464.656 2.6 1.594 3.41 2.813.808 1.207 1.212 2.59 1.212 4.148h-6.152c0-1.043-.322-1.852-.967-2.426-.633-.574-1.494-.861-2.584-.861-1.101 0-1.974.246-2.619.738-.633.48-.95 1.096-.95 1.846 0 .656.353 1.254 1.056 1.793.703.527 1.94 1.078 3.709 1.652 1.77.563 3.222 1.172 4.359 1.828 2.766 1.594 4.148 3.791 4.148 6.592 0 2.238-.843 3.996-2.53 5.273-1.688 1.278-4.003 1.917-6.944 1.917-2.074 0-3.955-.37-5.643-1.108-1.676-.75-2.941-1.77-3.797-3.059-.843-1.3-1.265-2.794-1.265-4.482h6.187c0 1.371.352 2.385 1.055 3.041.715.645 1.869.967 3.463.967 1.02 0 1.822-.217 2.408-.65.598-.446.897-1.067.897-1.864zm31.007-5.467c0 2.497-.463 4.705-1.388 6.627-.926 1.922-2.245 3.405-3.955 4.448-1.7 1.03-3.639 1.547-5.819 1.547-2.179 0-4.113-.498-5.801-1.495-1.687-1.007-3.005-2.443-3.955-4.306-.937-1.864-1.429-4.002-1.476-6.416v-1.442c0-2.508.457-4.716 1.371-6.627.926-1.921 2.244-3.404 3.955-4.447 1.723-1.043 3.68-1.564 5.871-1.564 2.168 0 4.102.515 5.801 1.547 1.699 1.03 3.017 2.502 3.955 4.412.949 1.898 1.43 4.078 1.441 6.539v1.177zm-6.275-1.072c0-2.543-.428-4.47-1.283-5.783-.844-1.324-2.057-1.986-3.639-1.986-3.094 0-4.728 2.32-4.904 6.96l-.018 1.881c0 2.508.416 4.436 1.248 5.784.832 1.347 2.069 2.021 3.709 2.021 1.559 0 2.76-.662 3.604-1.986.843-1.324 1.271-3.229 1.283-5.713v-1.178zm25.576 3.147h-9.949V43h-6.17V17.406h17.121v4.764h-10.951v5.889h9.949v4.746zm24.012-10.635h-7.682V43h-6.17V22.17h-7.541v-4.764h21.393v4.764zM126.004 54.203v8.376c0 .95-.202 1.773-.607 2.47a3.934 3.934 0 01-1.74 1.582c-.756.363-1.649.545-2.68.545-1.559 0-2.787-.404-3.683-1.213-.897-.809-1.354-1.916-1.371-3.322v-8.438h3.102v8.5c.036 1.4.686 2.1 1.952 2.1.638 0 1.122-.176 1.45-.528.328-.351.492-.923.492-1.714v-8.358h3.085zm6.284 8.033l-1.266 1.389V67h-3.084V54.203h3.084v5.643l1.073-1.626 2.759-4.017h3.815l-4.324 5.66L138.669 67h-3.656l-2.725-4.764zm11.918.246h-1.67V67h-3.085V54.203h5.036c1.518 0 2.704.337 3.56 1.01.855.675 1.283 1.627 1.283 2.857 0 .89-.182 1.63-.545 2.215-.357.586-.92 1.06-1.687 1.424l2.672 5.16V67h-3.305l-2.259-4.518zm-1.67-2.381h1.951c.586 0 1.026-.153 1.319-.457.298-.311.448-.742.448-1.292 0-.551-.15-.982-.448-1.292-.299-.317-.739-.475-1.319-.475h-1.951v3.516zm15.926 4.508h-4.228L153.496 67H150.2l4.694-12.797h2.9L162.522 67h-3.313l-.747-2.39zm-3.489-2.381h2.751l-1.38-4.439-1.371 4.438zM166.75 67h-3.076V54.203h3.076V67zm12.832 0h-3.067l-4.536-7.963V67h-3.084V54.203h3.084l4.527 7.963v-7.963h3.076V67zm9.888-5.423h-4.852v3.05h5.731V67h-8.816V54.203h8.833v2.382h-5.748v2.698h4.852v2.294zM171 0h20v5h-20z"/>
+		<path d="M186 20V0h5v20zM20 63H0v-5h20z"/>
+		<path d="M5 43v20H0V43z"/>
+	</g>
+	<g id="details">
+		<rect width="5.45455" height="5.45455" rx="2.72727"/>
+		<rect x="24.5455" width="5.45455" height="5.45455" rx="2.72727"/>
+		<rect x="12.2727" width="5.45455" height="5.45455" rx="2.72727"/>
+	</g>
+	<g id="icon-phone">
+		<path d="M27.5927 19.6916C25.756 19.6916 23.9526 19.4043 22.2436 18.8395C21.4062 18.5539 20.3767 18.8159 19.8657 19.3409L16.4925 21.8873C12.5805 19.7991 10.1708 17.3902 8.11115 13.5076L10.5826 10.2223C11.2247 9.58102 11.455 8.6443 11.1791 7.76539C10.6119 6.04742 10.3238 4.24484 10.3238 2.40734C10.3239 1.07992 9.24396 0 7.91662 0H2.40726C1.07992 0 0 1.07992 0 2.40727C0 17.6221 12.3779 30 27.5927 30C28.9201 30 30 28.9201 30 27.5927V22.0988C29.9999 20.7715 28.92 19.6916 27.5927 19.6916Z"/>
+	</g>
+	<g id="icon-email">
+		<path d="M27.3633 0H2.63672C1.18465 0 0 1.18336 0 2.63672V20.2148C0 21.6633 1.17938 22.8516 2.63672 22.8516H27.3633C28.8117 22.8516 30 21.6722 30 20.2148V2.63672C30 1.18828 28.8206 0 27.3633 0ZM26.9992 1.75781L15.0559 13.7012L3.00932 1.75781H26.9992ZM1.75781 19.8509V2.99232L10.2234 11.3853L1.75781 19.8509ZM3.00076 21.0938L11.4717 12.6229L14.4398 15.5655C14.7834 15.9062 15.3379 15.9051 15.6801 15.5629L18.5742 12.6687L26.9992 21.0938H3.00076ZM28.2422 19.8508L19.8172 11.4258L28.2422 3.0007V19.8508Z"/>
+	</g>
+	<g id="icon-day">
+		<path d="M20.82 5.52l.297-4.042-2.952 2.743.741 1.888 1.914-.59zM15.868 22.698a7.797 7.797 0 10-2.495-15.393 7.797 7.797 0 002.495 15.393zM10.343 6.109l.736-1.875-2.963-2.749.301 4.03 1.926.594zM16.87 5.718L14.625 0l-2.246 5.718a9.537 9.537 0 014.492 0zM29.249 18.338l-5.076-3.463.001.125a9.49 9.49 0 01-1.002 4.255l6.077-.917zM23.281 10.97l3.071-5.322-5.876 1.81a9.607 9.607 0 012.805 3.512zM24.245 12.804l1.656 1.13 3.344-2.287-3.987-.598-1.012 1.755zM13.152 26.234L14.634 30l1.473-3.757-1.482-1.375-1.473 1.366zM8.116 28.515l4.505-4.178a9.52 9.52 0 01-4.047-1.954l-.458 6.132zM16.628 24.337l4.505 4.178-.458-6.132a9.52 9.52 0 01-4.047 1.954zM22.34 21.153l.15 2 3.87 1.19-2.019-3.492-2 .302zM8.773 7.458l-5.876-1.81 3.071 5.322a9.61 9.61 0 012.805-3.512zM5.004 12.804l-1.006-1.743L0 11.665l3.337 2.276 1.667-1.137zM2.901 24.357l3.858-1.19.15-2.014-1.988-.3-2.02 3.504zM5.075 15l.002-.125L0 18.338l6.076.918A9.49 9.49 0 015.075 15z"/>
+	</g>
+	<g id="icon-night">
+		<path d="M9.999 20a9.737 9.737 0 008.933-5.635 7.635 7.635 0 01-3.22.635 7.865 7.865 0 01-7.856-7.856A8.142 8.142 0 0112.093.12 14.93 14.93 0 009.999 0C4.477.001 0 4.478 0 10.001 0 15.523 4.477 20 9.999 20z"/>
+	</g>
+</svg>
+
+	<div class="container container--inner">
+
+		<header class="main-header">
+			<div class="container container--header">
+				<div class="main-header__wrap">
+					<a href="" class="main-header__logo">
+						<svg viewBox="0 0 190 70">
+							<use xlink:href="#logo"></use>
+						</svg>
+					</a>
+					<div class="main-header__menu">
+						<div class="mobile-wrap">
+					        <h3 class="main-header__description">Меню</h3>
+					        <div class="main-nav__toggle">
+					            <span class="line-burger"></span>
+					        </div>
+					    </div>
+					    <ul class="main-header__list" style="">
+					        <li>
+					          <a class="main-header__link main-header__link--active" href="">Головна</a>
+					        </li>
+					        <li>
+					         <a class="main-header__link" href="">Новини</a>
+					        </li>
+					        <li>
+					          <a class="main-header__link" href="">Статті</a>
+					        </li>
+					        <li>
+					          <a class="main-header__link" href="">Огляд</a>
+					        </li>
+					        <li>
+					          <a class="main-header__link" href="">Відео</a>
+					        </li>
+					        <li>
+					          <a class="main-header__link" href="">Про нас</a>
+					        </li>
+					        <li>
+					          <a class="main-header__link" href="">Контакти</a>
+					        </li>
+					    </ul>
+				    </div>
+				    <a href="" class="btn btn--write">Напишіть нам</a>
+
+				    <div class="main-header__content">
+	                    <div class="main-header__button">
+	                      	<button type="button"></button>
+	                    </div>
+	                    <form class="main-header__search" action="" method="GET">
+	                        <div class="main-header__search-wrap">
+	                            <input class="main-header__input" placeholder="Пошук" type="search" name="s" id="s" value="">
+	                            <button type="submit" class="main-header__search-btn"></button>
+	                        </div>
+	                    </form>
+	                </div>
+	                <div class="main-header__block">
+						<div class="main-header__mode">
+							<label for="light" class="main-header__box main-header__box--day">
+								<svg viewBox="0 0 30 30">
+									<use xlink:href="#icon-day"></use>
+								</svg>
+								<input id="light" type="radio" name="theme" value="light" checked>
+							</label>
+							<label for="dark" class="main-header__box main-header__box--night">
+								<svg viewBox="0 0 19 20">
+									<use xlink:href="#icon-night"></use>
+								</svg>
+								<input id="dark" type="radio" name="theme" value="dark">
+							</label>
+						</div>
+						<ul>
+							<li id="qtranslate-3" class="widget qtranxs_widget">
+							    <ul class="language-chooser language-chooser-text qtranxs_language_chooser" id="qtranslate-3-chooser">
+								    <li class="lang-ua active">
+								        <a href="" lang="ua" title="Рус (ua)" class="qtranxs_text qtranxs_text_ua"><span>Укр</span></a>
+								    </li>
+								    <li class="lang-ru">
+					                    <a href="" lang="ru" title="Рус (ru)" class="qtranxs_text qtranxs_text_ru"><span>Рус</span></a>
+					                 </li>
+								</ul>
+								<div class="qtranxs_widget_end"></div>
+							</li>
+						</ul>
+					</div><!--end main-header__block-->
+				</div><!--end main-header__wrap-->
+			</div>
+		</header>
+
+		<section class="single">
+			<div class="container">
+				<div class="single__holder">
+					<p class="single__box">Оприлюднено: <span class="single__elem">21 бер. 2021</span></p>
+					<p class="single__box">автор: <span class="single__elem">сергій миколєнко</span></p>
+				</div>
+				<h3 class="subtitle">Some interesting title of a news</h3>
+				<ul class="info__tags info__tags--single">
+					<li>
+						<a href="" class="info__box">сучасний страйкбол</a>
+					</li>
+					<li>
+						<a href="" class="info__box">сучасний стр</a>
+					</li>
+				</ul>
+				<div class="single__video">
+				    <iframe src="https://www.youtube.com/embed/PnaXw_qUg3A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+			    </div>
+			    <div class="single__like" data-single="true">
+					<svg viewBox="0 0 15 20">
+						<use xlink:href="#icon-like"></use>
+					</svg>
+					<p class="single__count">233</p>
+				</div>
+			    <div class="single__text">
+			    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt</p>
+                    <div class="alignright">
+                    	<img src="img/blog-pic.png" alt="">
+                    	<p class="wp-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt</p>
+
+                     <div class="alignleft">
+                    	<img src="img/blog-pic.png" alt="">
+                    	<p class="wp-caption-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt</p>
+
+                    <h3>Some subtitle</h3>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor  incididunt  ut  labore  et  dolore  magna  aliqua.  Ut  enim  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut   aliquip ex ea   commodo consequat.   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  Excepteur  sint  occaecat  cupidatat  non proident, sunt in culpa qui officia  deserunt</p>
+
+			    </div> 
+
+			     <div class="single__like" data-single="true">
+					<svg viewBox="0 0 15 20">
+						<use xlink:href="#icon-like"></use>
+					</svg>
+					<p class="single__count">233</p>
+				</div>
+			   
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container container--reviews">
+				<h3 class="reviews__title">Комментарии</h3>
+				<div class="reviews__wrap">
+					<div class="reviews__item">
+						<div class="reviews__inner">
+							<p class="reviews__fio">Андрей</p>
+							<p class="reviews__date">16 июля 2018 в 6:32</p>
+						</div>
+						<div class="reviews__text">
+							<p>Заказал сразу две штуки, себе и девушке, качеством обслуживания остался доволен. Товар пришёл быстро, дали гарантию 3 месяца. Пока никаких изъянов не вижу. Спасибо за работу.</p>
+						</div>
+					</div>
+					<div class="reviews__item reviews__item--answer">
+						<div class="reviews__inner">
+							<p class="reviews__fio">Андрей</p>
+							<p class="reviews__date">16 июля 2018 в 6:32</p>
+						</div>
+						<div class="reviews__text">
+							<p>Заказал сразу две штуки, себе и девушке, качеством обслуживания остался доволен. Товар пришёл быстро, дали гарантию 3 месяца. Пока никаких изъянов не вижу. Спасибо за работу.</p>
+						</div>
+					</div>
+				</div><!--end reviews__wrap-->
+				<div id="respond" class="comment-respond">
+					<form action="//ruchka-mebel.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+						<p class="comment-form-comment">
+
+						<div class="reviews-form__item">
+							<div class="reviews-form__block">
+								<label for="r_comment" class="reviews-form__label">Комментарий</label> 
+								<p class="reviews-form__required">обязательно</p>
+							</div>
+							<textarea id="r_comment" name="comment" required="required"></textarea>
+						</div>
+
+						<div class="reviews-form__item">
+							<div class="reviews-form__block">
+								<label for="r_email" class="reviews-form__label">E-mail</label> 
+								<p class="reviews-form__required">обязательно</p>
+							</div>
+							<input id="r_email" name="email" type="text" value="" size="30" maxlength="245" required='required' />
+						</div>
+
+						<div class="reviews-form__item">
+							<div class="reviews-form__block">
+								<label for="r_name" class="reviews-form__label">Имя</label> 
+								<p class="reviews-form__required">обязательно</p>
+							</div>
+							<input id="r_name" type="text" value="" size="30" maxlength="245" required='required' />
+						</div>
+
+						<input name="submit" type="submit" id="submit" class="submit" value="Отправить комментарий" /> 
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="tags">
+			<div class="container">
+				<div class="tags__inner tags__inner--single">
+					<h3 class="tags__title">Мітки</h3>
+					<ul class="tags__wrap">
+						<li>
+							<a href="" class="tags__box">сучасний страйкбол</a>
+						</li>
+						<li>
+							<a href="" class="tags__box">сучасний стр</a>
+						</li>
+						<li>
+							<a href="" class="tags__box">сучасний страйкбол</a>
+						</li>
+						<li>
+							<a href="" class="tags__box">сучасний стрsssssssss</a>
+						</li>
+						<li>
+							<a href="" class="tags__box">сучасний страйкбол</a>
+						</li>
+						<li>
+							<a href="" class="tags__box" style="display: none;">6 пункт</a>
+						</li>
+						<li>
+							<a href="" class="tags__box" style="display: none;">7 пункт</a>
+						</li>
+
+					</ul>
+					<button class="tags__details">
+						<svg viewBox="0 0 30 6">
+							<use xlink:href="#details"></use>
+						</svg>
+					</button>
+				</div><!--end tags__inner-->
+			</div>
+		</section>
+
+		<section class="blog page--similar">
+			<div class="container">
+
+			    <h3 class="subtitle subtitle--inner">Публікації за темою</h3>
+				<div class="blog__holder">
+					<div class="blog__wrap">
+						<div class="blog__item">
+							<div class="blog__image" style="background-image: url(img/blog-pic.png);"></div>
+							<h3 class="blog__title">Some interesting title of a news</h3>
+							<div class="blog__block">
+								<p class="blog__date">21 бер 2021</p>
+					 		    <p class="blog__col">Сергій миколєнко</p>
+							</div>
+							<div class="blog__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+							</div>
+							<div class="blog__row">
+								<a href="" class="btn btn--details">Читати далі</a>
+								<div class="blog__like">
+									<svg viewBox="0 0 15 20">
+										<use xlink:href="#icon-like"></use>
+									</svg>
+									<p class="blog__count">133</p>
+								</div>
+							</div>
+						</div><!--end blog__item-->
+						<div class="blog__item">
+							<div class="blog__image" style="background-image: url(img/blog-pic.png);"></div>
+							<h3 class="blog__title">Some interesting title of a news</h3>
+							<div class="blog__block">
+								<p class="blog__date">21 бер 2021</p>
+					 		    <p class="blog__col">Сергій миколєнко</p>
+							</div>
+							<div class="blog__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+							</div>
+							<div class="blog__row">
+								<a href="" class="btn btn--details">Читати далі</a>
+								<div class="blog__like">
+									<svg viewBox="0 0 15 20">
+										<use xlink:href="#icon-like"></use>
+									</svg>
+									<p class="blog__count">133</p>
+								</div>
+							</div>
+						</div><!--end blog__item-->
+						<div class="blog__item">
+							<div class="blog__image" style="background-image: url(img/blog-pic.png);"></div>
+							<h3 class="blog__title">Some interesting title of a news</h3>
+							<div class="blog__block">
+								<p class="blog__date">21 бер 2021</p>
+					 		    <p class="blog__col">Сергій миколєнко</p>
+							</div>
+							<div class="blog__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+							</div>
+							<div class="blog__row">
+								<a href="" class="btn btn--details">Читати далі</a>
+								<div class="blog__like">
+									<svg viewBox="0 0 15 20">
+										<use xlink:href="#icon-like"></use>
+									</svg>
+									<p class="blog__count">133</p>
+								</div>
+							</div>
+						</div><!--end blog__item-->
+						<div class="blog__item">
+							<div class="blog__image" style="background-image: url(img/blog-pic.png);"></div>
+							<h3 class="blog__title">22Some interesting title of a news</h3>
+							<div class="blog__block">
+								<p class="blog__date">25 бер 2021</p>
+					 		    <p class="blog__col">Сергій миколєнко</p>
+							</div>
+							<div class="blog__text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+							</div>
+							<div class="blog__row">
+								<a href="" class="btn btn--details">Читати далі</a>
+								<div class="blog__like">
+									<svg viewBox="0 0 15 20">
+										<use xlink:href="#icon-like"></use>
+									</svg>
+									<p class="blog__count">133</p>
+								</div>
+							</div>
+						</div><!--end blog__item-->
+					</div><!--end blog__wrap-->
+					<button class="blog__arrow blog__arrow--dir_right"></button>
+				</div><!--end blog__holder-->
+
+			</div>
+		</section>
+
+		<footer class="main-footer">
+			<div class="container">
+				<div class="main-footer__socials">
+					<a href="" class="main-footer__item">
+						<svg viewBox="0 0 60 50">
+							<use xlink:href="#icon-telegram"></use>
+						</svg>
+					</a>
+					<a href="" class="main-footer__item">
+						<svg viewBox="0 0 50 50">
+							<use xlink:href="#icon-instagram"></use>
+						</svg>
+					</a>
+					<a href="" class="main-footer__item">
+						<svg viewBox="0 0 67 50">
+							<use xlink:href="#icon-youtube"></use>
+						</svg>
+					</a>
+					<a href="" class="main-footer__item">
+						<svg viewBox="0 0 60 50">
+							<use xlink:href="#icon-facebook"></use>
+						</svg>
+					</a>
+				</div><!--end main-footer__socials-->
+				<ul class="main-footer__list">
+					<li><a href="" class="main-footer__link">Головна</a></li>
+					<li><a href="" class="main-footer__link">Новини</a></li>
+					<li><a href="" class="main-footer__link">Статті</a></li>
+					<li><a href="" class="main-footer__link">Огляд</a></li>
+					<li><a href="" class="main-footer__link">Відео</a></li>
+					<li><a href="" class="main-footer__link main-footer__link--active">Про нас</a></li>
+					<li><a href="" class="main-footer__link">Контакти</a></li>
+				</ul>
+				<div class="main-footer__logo">
+					<svg viewBox="0 0 190 70">
+						<use xlink:href="#logo"></use>
+					</svg>
+				</div>
+				<div class="main-footer__desc"><p>© 1998 — 2021. Будь-яке копіювання повинно супроводжуватись зворотнім посиланням. розроблено <a href="https://webworks.com.ua/">webworks.com.ua</a></p></div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

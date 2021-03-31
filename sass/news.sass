@@ -1,0 +1,54 @@
+@import 'responsive'
+
+.news
+	.title
+		margin-right: 50px
+
+	&__holder
+		display: flex
+		flex-wrap: wrap
+
+	&__list
+		display: flex
+		align-items: center
+		padding-bottom: 30px
+		margin: 0 -24px
+		+media(sm)
+			padding-bottom: 5px
+
+	&__box
+		display: block
+		font-size: 18px
+		line-height: 1.2
+		color: var(--color-dark1)
+		text-transform: uppercase
+		margin: 0 24px
+		margin-bottom: 20px
+		transition: 0.3s color
+		&:hover
+			color: #1B58B1
+
+
+.news,
+.page--news
+	.blog__wrap
+		margin: 0 -20px
+		+media(smx)
+			margin: 0 auto
+
+	.blog__item
+		width: calc(100% / 3 - 40px)
+		margin: 0 20px
+		padding-bottom: 45px
+		+media(md)
+			width: calc(100% / 2 - 40px)
+		+media(smx)
+			width: 100%
+			margin: 0
+
+.page--similar
+	padding-bottom: 125px
+	+media(md)
+		padding-bottom: 80px
+	+media(sm)
+		padding-bottom: 45px

@@ -1,0 +1,71 @@
+@import 'responsive'
+
+.tags
+	&__inner
+		display: flex
+		align-items: flex-start
+		padding-bottom: 35px
+		+media(mdx)
+			flex-wrap: wrap
+			padding-bottom: 15px
+		+media(sm)
+			flex-direction: column
+			align-items: flex-start
+
+		&--single
+			justify-content: center
+			padding-bottom: 45px
+
+	&__title
+		font-size: 24px
+		color: var(--color-dark1)
+		text-transform: uppercase
+		padding-top: 5px
+		margin-bottom: 15px
+		margin-right: 22px
+		font-weight: normal
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -12px
+		padding-right: 22px
+
+	&__box
+		display: block
+		font-size: 14px
+		line-height: 1.7
+		color: var(--info-box)
+		background-color: var(--info-bgc)
+		border-radius: 10px
+		text-transform: uppercase
+		padding: 8px 12px
+		padding-bottom: 9px
+		margin: 0 12px
+		margin-bottom: 15px
+		transition: 0.3s background-color, 0.3s color
+		&:hover
+			background-color: var(--link--hover)
+			color: #fff
+
+	&__details
+		cursor: pointer
+		display: flex	
+		justify-content: center
+		align-items: center
+		width: 30px	
+		height: 30px	
+		padding: 0px	
+		border: none
+		background-color: transparent
+		outline: none
+		margin-bottom: 15px
+		+media(mdx)
+			display: none
+		svg
+			display: block
+			height: 5px	
+			fill: var(--btn--details)
+			transition: 0.3s fill
+		&:hover svg
+			fill: var(--btn--show-hover)

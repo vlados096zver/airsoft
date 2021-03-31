@@ -1,0 +1,23 @@
+@import 'responsive'
+
+.about
+	&__image
+		margin-top: 10px
+		margin-bottom: 70px
+		+media(md)
+			margin-top: 0px
+			margin-bottom: 45px
+		img
+			display: block
+
+	&__text
+		max-width: 1000px
+		margin: 0 auto
+		padding-bottom: 72px
+		+media(md)
+			padding-bottom: 45px
+		p
+			font-size: 14px
+			line-height: 1.7
+			color: var(--color-dark1)
+			padding-bottom: 2em

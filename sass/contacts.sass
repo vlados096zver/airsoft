@@ -1,0 +1,114 @@
+@import 'responsive'
+
+.contacts
+	margin-bottom: 80px
+	+media(md)
+		margin-bottom: 50px
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+		padding-top: 24px
+		padding-bottom: 45px
+		margin: 0 -12px
+		+media(sm)
+			padding-bottom: 20px
+
+	&__col
+		display: flex
+		align-items: center
+		margin: 0 12px
+		margin-bottom: 25px
+		svg
+			display: block
+			width: 30px
+			height: 30px
+			fill: var(--social-icon)
+			margin-right: 20px
+
+	&__phone,
+	&__email
+		line-height: 1
+		color: var(--color-dark1)
+		font-weight: 200
+
+	&__phone
+		font-size: 36px
+		+media(sm)
+			font-size: 27px
+
+	&__email
+		font-size: 24px
+		+media(sm)
+			font-size: 19px
+
+	&__subtitle
+		font-size: 48px
+		line-height: 1.2
+		color: var(--color-dark1)
+		text-transform: uppercase
+		text-align: center
+		padding-bottom: 50px
+		font-weight: 200
+		+media(md)
+			font-size: 32px
+		+media(sm)
+			font-size: 24px
+
+	&__item
+		margin-bottom: 25px
+		&--block
+			margin-bottom: 45px
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		padding-left: 40px
+		padding-right: 30px
+		+media(mdx)
+			padding: 0 20px
+		+media(sm)
+			padding: 0px
+
+	&__label
+		display: inline-block
+		cursor: pointer
+		user-select: none
+		font-size: 18px
+		line-height: 1
+		color: var(--color-dark1)
+		text-transform: uppercase
+		margin-bottom: 8px
+		font-weight: bold
+		+media(sm)
+			font-size: 17px
+
+	&__info
+		font-size: 18px
+		line-height: 1
+		color: #808080
+		text-transform: uppercase
+		margin-bottom: 8px
+		font-weight: normal
+		+media(sm)
+			font-size: 17px
+
+	&__wrap-error
+		margin-bottom: 10px
+
+	&__error
+		color: #ff4f00
+		padding-bottom: 15px
+		padding-left: 40px
+		text-transform: uppercase
+		font-weight: 700
+		+media(mdx)
+			padding-left: 20px
+		+media(sm)
+			padding-left: 0px
+
+	&__elem
+		max-width: 280px
+		margin: 0 auto

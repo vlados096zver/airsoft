@@ -1,0 +1,185 @@
+@import 'responsive'
+
+.blog
+	padding-bottom: 60px
+	+media(lgm)
+		padding-bottom: 40px
+	.blog__wrap
+		margin: 0 -20px
+		+media(smx)
+			margin: 0px auto
+
+	&__wrap
+		display: flex
+		flex-wrap: wrap
+		+media(smx)
+			max-width: 500px
+			margin: 0 auto
+
+	&__item
+		outline: none
+
+	&__image
+		width: 100%
+		background-repeat: no-repeat
+		background-size: cover
+		padding-top: 55%
+		margin-bottom: 24px
+
+	&__title
+		font-size: 24px
+		line-height: 1.9
+		color: var(--color-dark1)
+		text-transform: uppercase
+		padding-bottom: 15px
+		font-weight: 900
+		+media(mdx)
+			font-size: 22px
+			line-height: 1.5
+		+media(sm)
+			font-size: 20px
+
+	&__block	
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 7px
+
+	&__date,
+	&__col
+		font-size: 14px
+		line-height: 1.7
+		color: var(--color-dark2)
+		text-transform: uppercase
+		padding-bottom: 15px
+
+	&__col
+		padding-left: 22px
+
+	&__text
+		p
+			font-size: 14px
+			line-height: 1.7
+			color: var(--info-block)
+			padding-bottom: 1em
+
+	&__row
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__like
+		cursor: pointer
+		display: flex
+		align-items: center
+		margin-bottom: 15px
+		svg
+			display: block
+			width: 20px
+			height: 20px
+			fill: var(--color--like)
+			margin-right: 12px
+			transition: 0.3s fill
+		&:hover 
+			svg
+				fill: var(--hover--like)
+
+			p
+				color: var(--hover--like)
+
+	&__count
+		user-select: none
+		font-size: 14px
+		line-height: 1.7
+		color: #808080
+		font-weight: normal
+		transition: 0.3s color
+
+	.slick-initialized .slick-slide
+		margin: 0 20px
+		+media(smx)
+			margin: 0px
+
+	&__holder
+		position: relative
+
+	&__arrow
+		position: absolute
+		top: calc(50% - 20px)
+		right: -80px
+		display: block
+		cursor: pointer
+		outline: none
+		border: none
+		background-color: transparent
+		width: 40px
+		height: 40px
+		padding: 0px
+		transition: 0.3s border
+		+media(lg)
+			right: -45px
+		+media(lgm)
+			display: none
+		&:after
+			position: absolute
+			content: ' '
+			width: 20px
+			height: 20px
+			top: calc(50% - 10px)
+			left: calc(50% - 12px)
+			border-right: 2px solid var(--social-icon)
+			border-bottom: 2px solid var(--social-icon)
+			transform: rotate(-45deg)
+			transition: 0.3s border
+
+		&:hover:after
+			border-color: var(--hover--arrow)
+
+	&__dots-list
+		position: absolute
+		display: none
+		+media(lgm)
+			display: flex
+			flex-wrap: wrap
+			position: relative
+			justify-content: center
+			right: initial
+			margin: 0 auto
+			margin-top: 30px
+
+		button
+			display: block
+			cursor: pointer
+			position: relative
+			background-color: transparent
+			width: 20px
+			height: 20px
+			font-size: 0px
+			padding: 0px
+			border: 4px solid transparent
+			outline: none
+			margin-bottom: 15px
+			&:after
+				position: absolute
+				content: ' '
+				left: calc(50% - 5px)
+				top: calc(50% - 5px)
+				width: 10px
+				height: 10px
+				background-color: #1B58B1
+				border-radius: 50%
+				transition: 0.3s background-color, 0.3s transform
+
+		li
+			&:not(:last-child)
+				+media(lgm)
+					margin-right: 12px
+
+			&.slick-active	button
+				border: 4px solid #1B58B1
+				border-radius: 50%
+				&:after
+					background-color: #fff
+					transform: scale(0)
+
+.page--news
