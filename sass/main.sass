@@ -25,6 +25,7 @@ html
 		--bg--dots: url("../img/icons/details-light.svg")
 
 		--btn--show-hover: #0d2c59
+		--btn--border-hover: #0d2c59
 		--color--alt: #808080
 		--bg-input: #f2f2f2
 		--reviews--bg: rgba(0, 0, 0, 0.03)
@@ -32,6 +33,7 @@ html
 		--icon--night: rgba(51, 51, 51, 0.2)
 
 		--search: url("../img/icons/search.svg")
+		--search--active: url(../img/icons/search.svg)
 		--radius--input: 0px
 		--hover--arrow: #000
 		--contacts--error: #8B0000
@@ -62,7 +64,8 @@ html
 		--social-hover: rgba(255, 255, 255, 0.5)
 		--bg--dots: url("../img/icons/details-dark.svg")
 
-		--btn--show-hover: rgba(255, 255, 255, 0.7)
+		--btn--show-hover: rgba(255, 255, 255, 0.5)
+		--btn--border-hover: #fff
 		--color--alt: rgba(255, 255, 255, 0.5)
 		--bg-input: rgba(255, 255, 255, 0.5)
 		--reviews--bg: rgba(255, 255, 255, 0.1)
@@ -70,12 +73,13 @@ html
 		--icon--night: #fff
 
 		--search: url("../img/icons/search-dark.svg")
+		--search--active: url(../img/icons/search-active-dark.svg)
 		--radius--input: 10px
 		--hover--arrow: rgba(255, 255, 255, 0.5)
 		--contacts--error: #ff4f00
 		--hover-web: rgba(255, 255, 255, 0.5)
 		--border--data: 2px solid #fff
-		--hover--box: #1B58B1
+		--hover--box: #000
 
 body
 	margin: 0
@@ -235,7 +239,7 @@ img
 		border: var(--border--data)
 		&:hover
 			background-color: var(--btn--show-hover)
-			border-color: var(--btn--show-hover)
+			border-color: var(--btn--border-hover)
 
 	&--details
 		width: auto
@@ -304,8 +308,8 @@ img
 		transition: 0.3s background-color, 0.3s color
 
 		&:hover:not(.dots,.current)
-			background-color: #1B58B1
-			color: #fff
+			background-color: var(--hover--header-link)
+			color: var(--background-phone)
 
 		&.current
 			cursor: default

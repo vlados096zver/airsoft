@@ -153,12 +153,14 @@ html.light {
 	--social-hover: #0d2c59;
 	--bg--dots: url("../img/icons/details-light.svg");
 	--btn--show-hover: #0d2c59;
+	--btn--border-hover: #0d2c59;
 	--color--alt: #808080;
 	--bg-input: #f2f2f2;
 	--reviews--bg: rgba(0, 0, 0, 0.03);
 	--icon--day: #f1ab41;
 	--icon--night: rgba(51, 51, 51, 0.2);
 	--search: url("../img/icons/search.svg");
+	--search--active: url(../img/icons/search.svg);
 	--radius--input: 0px;
 	--hover--arrow: #000;
 	--contacts--error: #8B0000;
@@ -185,19 +187,21 @@ html.dark {
 	--color--logo: #fff;
 	--social-hover: rgba(255, 255, 255, 0.5);
 	--bg--dots: url("../img/icons/details-dark.svg");
-	--btn--show-hover: rgba(255, 255, 255, 0.7);
+	--btn--show-hover: rgba(255, 255, 255, 0.5);
+	--btn--border-hover: #fff;
 	--color--alt: rgba(255, 255, 255, 0.5);
 	--bg-input: rgba(255, 255, 255, 0.5);
 	--reviews--bg: rgba(255, 255, 255, 0.1);
 	--icon--day: rgba(241, 171, 65, 0.2);
 	--icon--night: #fff;
 	--search: url("../img/icons/search-dark.svg");
+	--search--active: url(../img/icons/search-active-dark.svg);
 	--radius--input: 10px;
 	--hover--arrow: rgba(255, 255, 255, 0.5);
 	--contacts--error: #ff4f00;
 	--hover-web: rgba(255, 255, 255, 0.5);
 	--border--data: 2px solid #fff;
-	--hover--box: #1B58B1;
+	--hover--box: #000;
 }
 
 body {
@@ -380,7 +384,7 @@ img {
 .btn--write:hover,
 .btn--read:hover {
 	background-color: var(--btn--show-hover);
-	border-color: var(--btn--show-hover);
+	border-color: var(--btn--border-hover);
 }
 
 .btn--details {
@@ -456,8 +460,8 @@ img {
 }
 
 .navigation .page-numbers:hover {
-	background-color: #1B58B1;
-	color: #fff;
+	background-color: var(--hover--header-link);
+	color: var(--background-phone);
 }
 
 .navigation .page-numbers.current {
@@ -658,7 +662,7 @@ img {
 	border: 0;
 	outline: none;
 	background-color: transparent;
-	background-image: url(../img/icons/search.svg);
+	background-image: var(--search--active);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
@@ -1116,7 +1120,7 @@ img {
 
 .tags__inner {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	padding-bottom: 35px;
 }
 
@@ -1664,19 +1668,19 @@ img {
 .single__like svg {
 	cursor: pointer;
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	fill: var(--social-icon);
-	margin-right: 12px;
+	margin-right: 20px;
 	transition: 0.3s fill;
 }
 
 .single__like:hover svg {
-	fill: var(--hover--like);
+	fill: var(--btn--show-hover);
 }
 
 .single__like:hover p {
-	color: var(--hover--like);
+	color: var(--btn--show-hover);
 }
 
 .single__count {
