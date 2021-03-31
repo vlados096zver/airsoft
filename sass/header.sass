@@ -103,6 +103,7 @@
 				height: 7px
 				background-color: var(--hover--like)
 				border-radius: 7px
+				transition: 0.3s background-color
 				+media(smdx)
 					width: 100%
 					left: 0px
@@ -110,7 +111,7 @@
 					height: 4px
 
 		&:hover:not(.main-header__link--active)
-			color: #1B58B1
+			color: var(--hover--header-link)
 
 	&__block
 		display: flex
@@ -174,6 +175,7 @@
 
 	&__search
 		position: absolute
+		z-index: 2
 		top: 50%
 		transform: translateY(-50%)
 		left: 0

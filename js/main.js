@@ -45,6 +45,8 @@ $(document).ready(function() {
     arrows: false,
     dots: false,
     dotsClass: 'info__dots-list',
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
     /* responsive: [{
        breakpoint: 781,
        settings: {
@@ -83,6 +85,9 @@ $(document).ready(function() {
          dots: true,
        }
      }]*/
+
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
 
     responsive: [
 

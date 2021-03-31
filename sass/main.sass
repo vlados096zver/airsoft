@@ -13,63 +13,69 @@ html
 		--title-color: #000000
 		--color--like: #808080
 		--hover--like: #1B58B1
+		--hover--header-link: #1B58B1
 
 		--link--hover: #1B58B1
-
 		--btn--read: #1B58B1
 		--btn--details: #1B58B1
 
 		--social-icon: #1B58B1
 		--color--logo: #333
+		--social-hover: #0d2c59
 		--bg--dots: url("../img/icons/details-light.svg")
 
 		--btn--show-hover: #0d2c59
 		--color--alt: #808080
 		--bg-input: #f2f2f2
 		--reviews--bg: rgba(0, 0, 0, 0.03)
-
 		--icon--day: #f1ab41
-
 		--icon--night: rgba(51, 51, 51, 0.2)
+
 		--search: url("../img/icons/search.svg")
 		--radius--input: 0px
 		--hover--arrow: #000
+		--contacts--error: #8B0000
+		--hover-web: rgba(27, 88, 177, 0.5)
+		--border--data: 2px solid #1B58B1
+		--hover--box: #fff
 
 	&.dark
 		--color-dark1: #fff
-
 		--color-dark2: #fff
+
 		--background-phone: #333
 		--info-block: #fff
 		--info-box: #fff
-		--info-bgc: rgba(255, 255, 255, 0.1)
+		--info-bgc: rgba(255, 255, 255, 0.5)
 
 		--title-color: #fff
 		--color--like: #808080
 		--hover--like: #fff
+		--hover--header-link: rgba(255, 255, 255, 0.5)
 
 		--link--hover: #1B58B1
-
 		--btn--read: transparent
 		--btn--details: #fff
 		
 		--social-icon: #fff
 		--color--logo: #fff
-		--social-hover: #1B58B1
+		--social-hover: rgba(255, 255, 255, 0.5)
 		--bg--dots: url("../img/icons/details-dark.svg")
 
-		--btn--show-hover: #1B58B1
+		--btn--show-hover: rgba(255, 255, 255, 0.5)
 		--color--alt: rgba(255, 255, 255, 0.5)
-		--bg-input: rgba(255, 255, 255, 0.2)
+		--bg-input: rgba(255, 255, 255, 0.5)
 		--reviews--bg: rgba(255, 255, 255, 0.1)
-
 		--icon--day: rgba(241, 171, 65, 0.2)
-
 		--icon--night: #fff
 
 		--search: url("../img/icons/search-dark.svg")
 		--radius--input: 10px
-		--hover--arrow: #1B58B1
+		--hover--arrow: rgba(255, 255, 255, 0.5)
+		--contacts--error: #ff4f00
+		--hover-web: rgba(255, 255, 255, 0.5)
+		--border--data: 2px solid #fff
+		--hover--box: #1B58B1
 
 body
 	margin: 0
@@ -226,8 +232,10 @@ img
 
 	&--write,
 	&--read
+		border: var(--border--data)
 		&:hover
 			background-color: #0d2c59
+			border-color: #0d2c59
 
 	&--details
 		width: auto
@@ -281,7 +289,6 @@ img
 		font-size: 16px
 		line-height: 1.2
 		color: #000
-	a:hover
 
 	.page-numbers
 		display: flex
@@ -295,7 +302,8 @@ img
 		margin: 0 7px
 		margin-bottom: 15px
 		transition: 0.3s background-color, 0.3s color
-		&:hover:not(.current)
+
+		&:hover:not(.dots,.current)
 			background-color: #1B58B1
 			color: #fff
 
@@ -323,6 +331,4 @@ img
 				background-repeat: no-repeat
 				background-size: 100%
 				background-position: center
-			&:hover
-				background-color: transparent
 
