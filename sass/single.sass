@@ -1,80 +1,66 @@
 @import 'responsive'
 
 .single
-	padding-bottom: 32px
-	&__holder
-		display: flex
-		flex-wrap: wrap
-		justify-content: center
-		margin: 0 -8px
-		padding-bottom: 10px
+	.blog--inner .blog__wrap
+		padding-bottom: 0px
 
-	&__box
-		text-transform: uppercase
-		margin: 0 8px
-		margin-bottom: 15px
-
-	&__elem
-		padding-left: 15px
-		font-weight: 400
-
-	&__video
-		position: relative
-		padding-bottom: 56.25%
-		max-height: 675px
-		height: 0px
-		margin-bottom: 25px
-		iframe
-			position: absolute
-			top: 0px
-			left: 0px
-			width: 100%
-			height: 100%
-		img
-			display: block
-			width: 100%
-
-	&__like
-		cursor: pointer
-		display: flex
-		margin: 0 auto
-		max-width: max-content
-		align-items: center
-		margin-bottom: 27px
+	.single__holder .blog__like
 		svg
-			cursor: pointer
-			display: block
 			width: 30px
 			height: 30px
-			fill: var(--social-icon)
+			fill: var(--hover--like)
 			margin-right: 20px
-			transition: 0.3s fill
+
+		.blog__count
+			font-size: 20px
+			color: var(--hover--like)
+
 		&:hover
 			svg
-				fill: var(--btn--show-hover)
+				fill: var(--social-hover)
 
-			p
-				color: var(--btn--show-hover)
+			.blog__count
+				color: var(--social-hover)
 
-	&__count
-		user-select: none
-		font-size: 14px
-		line-height: 1.7
-		color: var(--social-icon)
-		font-weight: normal
-		transition: 0.3s color
+	&__elem
+		display: flex
+		justify-content: center
+		align-items: flex-end
+		min-height: 300px
+		height: 0px
+		padding-top: 40%
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: top center
+		margin-bottom: 56px
+		+media(md)
+			margin-bottom: 40px
+
+	&__title
+		max-width: 630px
+		font-size: 24px
+		line-height: 1.5
+		color: #fff
+		text-transform: uppercase
+		text-align: center
+		padding: 0 10px
+		padding-bottom: 26px
+		margin: 0 auto
+		font-weight: 900
+		+media(md)
+			font-size: 22px
+		+media(sm)
+			font-size: 20px
+
 
 	&__text
-		margin-bottom: 30px
-		img
-			display: block
-			width: 100%
-
+		padding-bottom: 22px
 		p
 			font-size: 16px
-			color: var(--color-dark1)
 			line-height: 1.9
-			padding-bottom: 1.5em
+			color: var(--color-dark1)
+			&:not(:last-child)
+				padding-bottom: 2em
 
 		h1
 			font-size: 28px
@@ -108,14 +94,12 @@
 
 		h1, h2, h3, h4, h5, h6
 			line-height: 1.5
-			color: var(--color-dark1)
-			text-transform: uppercase
-			text-align: center
+			color: #000
 			font-weight: bold
-			padding-top: 22px
-			padding-bottom: 35px
+			padding-bottom: 50px
 			+media(sm)
 				line-height: 1.4
+				padding-bottom: 35px
 
 		ul
 			margin: 1em 0
@@ -128,6 +112,7 @@
 
 		ol
 			margin: 1em 0
+			padding: 0px
 			li
 				list-style-type: decimal
 				list-style-position: inside
@@ -135,32 +120,118 @@
 				margin-bottom: 5px
 				padding-left: 20px
 
-		.wp-caption-text
-			font-size: 14px
-			line-height: 1.9
-			color: var(--color--alt)
-			padding-top: 40px
-			+media(sm)
-				padding-top: 30px
+	&__holder
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		padding-bottom: 60px
+		+media(md)
+			padding-bottom: 40px
 
-.alignright,
-.alignleft
-	max-width: 480px
-	display: inline-block
-	+media(sm)
+
+	&__row
+		display: flex
+		align-items: center
+		padding-right: 30px
+
+	&__col
+		font-size: 16px
+		line-height: 1.2
+		color: var(--color-dark1)
+		text-transform: uppercase
+		padding-right: 20px
+		margin-bottom: 15px
+		font-weight: 500
+		&--page
+			margin-bottom: 30px
+
+	&__topic
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		li:not(:last-child)
+			margin-right: 20px
+
+	&__box
 		display: block
+		font-size: 16px
+		line-height: 1.2
+		color: var(--color-dark1)
+		text-transform: uppercase
+		margin-bottom: 15px
+		font-weight: 500
 
-.alignright
-	float: right
-	margin-left: 40px
-	+media(sm)
-		float: none
-		margin: 0px auto
-
-.alignleft
-	float: left
-	margin-right: 40px
-	+media(sm)
-		float: none
+	&__reviews
+		max-width: 740px
 		margin: 0 auto
+		margin-bottom: 70px
 
+	&__item
+		display: flex
+		align-items: center
+		min-height: 440px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: top center
+		padding-left: 70px
+		margin-bottom: 35px
+		+media(mdx)
+			min-height: 350px
+			padding-left: 40px
+		+media(sm)
+			min-height: 300px
+			padding-left: 20px
+
+	&__subtitle
+		max-width: 630px
+		font-size: 24px
+		line-height: 1.5
+		color: #fff
+		text-transform: uppercase
+		font-weight: 900
+
+	&__load
+		position: relative
+		width: 125px
+		height: 120px
+		margin: 0 auto
+		margin-top: 90px
+		margin-bottom: 180px
+		+media(md)
+			width: 80px
+			height: 80px
+			margin-top: 70px
+			margin-bottom: 85px
+		+media(sm)
+			width: 60px
+			height: 60px
+			margin-bottom: 60px
+
+		&:after
+			content: ''
+			position: absolute
+			top: calc(50% - 62px)
+			right: calc(50% - 60px)
+			width: 100%
+			height: 100%
+			background-image: url(img/icons/loader.svg)
+			background-repeat: no-repeat
+			background-size: 124px
+			background-position: center
+			animation: loader 1s infinite linear
+			+media(md)	
+				top: calc(50% - 40px)
+				right: calc(50% - 40px)
+				background-size: 80px
+			+media(sm)	
+				top: calc(50% - 30px)
+				right: calc(50% - 30px)
+				background-size: 60px
+
+@keyframes loader
+	0%
+		transform: rotate(0)
+
+	100%
+		transform: rotate(359deg)

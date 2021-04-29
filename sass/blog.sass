@@ -1,31 +1,124 @@
 @import 'responsive'
 
 .blog
-	padding-bottom: 60px
-	+media(lgm)
+	&--inner
+		.blog__wrap
+			margin: 0px
+			padding-bottom: 42px
+			+media(md)
+				padding-bottom: 32px
+			+media(sm)
+				margin: 0 auto
+				padding-bottom: 25px
+
+		.blog__item
+			display: flex
+			flex-wrap: wrap
+			width: 100%
+			margin: 0px
+			background-color: var(--bgc-blog)
+			padding: 10px 30px
+			margin-bottom: 30px
+			+media(mdx)
+				padding: 10px 20px
+			+media(sm)
+				justify-content: center
+
+		.blog__image
+			width: 375px
+			align-self: start
+			margin-top: 15px
+			padding-top: 16%
+			+media(sm)
+				width: 100%
+
+		.blog__content
+			width: calc(100% - 375px)
+			padding-left: 30px
+			+media(mdx)
+				padding-left: 20px
+			+media(sm)
+				width: 100%
+				padding-left: 0px
+
+		.blog__col
+			padding-right: 35px
+
+		.blog__text
+			display: none
+
+		.blog__like
+			display: none
+
+		.blog__like--row
+			display: flex
+
+	&__holder
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	&__inner
+		display: flex
+		align-items: center
 		padding-bottom: 40px
-	.blog__wrap
-		margin: 0 -20px
-		+media(smx)
-			margin: 0px auto
+		+media(sm)
+			padding-bottom: 30px
+
+	&__elem
+		cursor: pointer
+		border: none
+		outline: none
+		padding: 0px
+		background-color: transparent
+		&--col
+			width: 22px
+			height: 22px
+
+		&--row
+			width: 18px
+			height: 22px
+			margin-right: 12px
+
+		svg
+			display: block
+			width: 100%
+			height: 100%
+			fill: #c4c4c4
+			transition: 0.3s fill
+
+		&--active
+			svg
+				fill: #1B58B1
 
 	&__wrap
 		display: flex
 		flex-wrap: wrap
-		+media(smx)
-			max-width: 500px
+		margin: 0 -20px
+		+media(sm)
+			max-width: 450px
 			margin: 0 auto
 
 	&__item
-		outline: none
+		width: calc(100% / 3 - 40px)
+		margin: 0 20px
+		margin-bottom: 50px
+		+media(mdx)
+			width: calc(100% / 2 - 40px)
+			margin-bottom: 30px
+		+media(sm)
+			width: 100%
+			margin: 0px
+			margin-bottom: 20px
 		a
-			display: block
+			display: inline-block
 
 	&__image
 		width: 100%
 		background-repeat: no-repeat
 		background-size: cover
 		padding-top: 55%
+		min-height: 200px
 		margin-bottom: 24px
 
 	&__title
@@ -33,13 +126,15 @@
 		line-height: 1.9
 		color: var(--color-dark1)
 		text-transform: uppercase
-		padding-bottom: 15px
 		font-weight: 900
 		+media(mdx)
 			font-size: 22px
 			line-height: 1.5
 		+media(sm)
 			font-size: 20px
+
+	&__box
+		margin-bottom: 15px
 
 	&__block	
 		display: flex
@@ -89,6 +184,9 @@
 			p
 				color: var(--hover--like)
 
+		&--row
+			display: none
+
 	&__count
 		user-select: none
 		font-size: 14px
@@ -97,91 +195,9 @@
 		font-weight: normal
 		transition: 0.3s color
 
-	.slick-initialized .slick-slide
-		margin: 0 20px
-		+media(smx)
-			margin: 0px
-
-	&__holder
-		position: relative
-
-	&__arrow
-		position: absolute
-		top: calc(50% - 20px)
-		right: -80px
-		display: block
-		cursor: pointer
-		outline: none
-		border: none
-		background-color: transparent
-		width: 40px
-		height: 40px
-		padding: 0px
-		transition: 0.3s border
-		+media(lg)
-			right: -45px
-		+media(lgm)
-			display: none
-		&:after
-			position: absolute
-			content: ' '
-			width: 20px
-			height: 20px
-			top: calc(50% - 10px)
-			left: calc(50% - 12px)
-			border-right: 2px solid var(--social-icon)
-			border-bottom: 2px solid var(--social-icon)
-			transform: rotate(-45deg)
-			transition: 0.3s border
-
-		&:hover:after
-			border-color: var(--hover--arrow)
-
-	&__dots-list
-		position: absolute
-		display: none
-		+media(lgm)
-			display: flex
-			flex-wrap: wrap
-			position: relative
-			justify-content: center
-			right: initial
-			margin: 0 auto
-			margin-top: 30px
-
-		button
-			display: block
-			cursor: pointer
-			position: relative
-			background-color: transparent
-			width: 20px
-			height: 20px
-			font-size: 0px
-			padding: 0px
-			border: 4px solid transparent
-			outline: none
-			margin-bottom: 15px
-			&:after
-				position: absolute
-				content: ' '
-				left: calc(50% - 5px)
-				top: calc(50% - 5px)
-				width: 10px
-				height: 10px
-				background-color: #1B58B1
-				border-radius: 50%
-				transition: 0.3s background-color, 0.3s transform
-
-		li
-			&:not(:last-child)
-				+media(lgm)
-					margin-right: 12px
-
-			&.slick-active	button
-				border: 4px solid #1B58B1
-				border-radius: 50%
-				&:after
-					background-color: #fff
-					transform: scale(0)
-
-.page--news
+.msg-page
+	padding: 30px 15px
+	font-size: 20px
+	font-weight: bold
+	text-align: center
+	width: 100%

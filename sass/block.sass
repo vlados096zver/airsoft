@@ -1,0 +1,177 @@
+@import 'responsive'
+
+.block
+	padding-bottom: 20px
+	&__inner
+		display: flex
+		justify-content: space-between
+		align-items: center
+		+media(mdx)
+			flex-wrap: wrap
+
+	&__title
+		font-size: 48px	
+		line-height: 1
+		text-transform: uppercase
+		color: var(--color-dark1)
+		padding-right: 66px
+		margin-bottom: 28px
+		font-weight: 200
+
+	&__info
+		display: flex
+		align-items: center
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		li:not(:last-child)
+			margin-right: 48px
+
+	&__link
+		display: block
+		font-size: 18px
+		line-height: 1.2
+		color: var(--color-dark1)
+		text-transform: uppercase
+		margin-bottom: 28px
+		font-weight: normal
+		transition: 0.3s color
+		&:hover
+			color: var(--social-hover)
+
+	&__all
+		cursor: pointer
+		display: inline-block
+		white-space: nowrap
+		font-size: 18px
+		color: var(--social-icon)
+		line-height: 1.2
+		text-transform: uppercase
+		border: none
+		outline: none
+		background-color: transparent
+		margin-left: 80px
+		margin-bottom: 28px
+		font-weight: normal
+		transition: 0.3s color
+		&:hover
+			color: var(--social-hover)
+
+	&__subtitle
+		font-size: 18px
+		line-height: 1.2
+		color: #808080
+		text-transform: uppercase
+		padding-bottom: 25px
+		font-weight: normal
+		+media(sm)
+			text-align: center
+
+	&__holder
+		padding-bottom: 35px
+
+	&__item
+		display: flex
+		flex-wrap: wrap
+
+	&__box
+		&--pic
+			width: 375px
+			+media(sm)
+				width: 100%
+				max-width: 450px
+				margin: 0 auto
+
+		&--content
+			width: calc(100% - 375px)
+			padding-left: 45px
+			+media(mdx)
+				padding-left: 25px
+			+media(sm)
+				width: 100%
+				max-width: 450px
+				margin: 0 auto
+				padding-left: 0px
+
+	&__col
+		display: block
+		padding: 16px 22px
+		padding-top: 60%
+		background-repeat: no-repeat
+		background-size: cover
+		margin-bottom: 30px
+
+	&__text
+		font-size: 18px
+		line-height: 1.35
+		color: #fff
+
+	&__desc
+		position: relative
+
+	&__row
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -23px
+		+media(mdx)
+			margin: 0 -18px
+		+media(md)
+			margin: 0px
+
+	&__elem
+		width: calc(100% / 2 - 46px)
+		display: block
+		font-size: 18px
+		line-height: 1.2
+		color: var(--color-dark1)
+		border-bottom: 1px solid #808080
+		padding-bottom: 20px
+		margin: 0 23px
+		margin-bottom: 22px
+		+media(mdx)
+			width: calc(100% / 2 - 36px)
+			margin: 0 18px
+			margin-bottom: 22px
+		+media(md)
+			width: 100%
+			margin: 0px
+			margin-bottom: 22px
+
+	&__details
+		position: absolute
+		display: block
+		cursor: pointer
+		outline: none
+		border: none
+		background-color: transparent
+		width: 40px
+		height: 40px
+		padding: 0px
+		top: calc(50% - 14px)
+		right: -60px
+		transform: scaleX(-1)
+		font-size: 0px
+		+media(lg)
+			right: -45px
+		+media(lgm)
+			position: relative
+			top: initial
+			right: initial
+			font-size: 16px
+			color: var(--color-dark1)
+		&:after
+			position: absolute
+			content: ' '
+			width: 24px
+			height: 24px
+			top: calc(50% - 12px)
+			left: calc(50% - 5px)
+			border-left: 2px solid var(--btn--details)
+			border-top: 2px solid var(--btn--details)
+			transform: rotate(-45deg)
+			transition: 0.3s border
+
+		&:hover:after
+			border-color: var(--social-hover)

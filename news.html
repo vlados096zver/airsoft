@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="fonts/fonts.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -51,6 +51,23 @@
 	<g id="icon-night">
 		<path d="M9.999 20a9.737 9.737 0 008.933-5.635 7.635 7.635 0 01-3.22.635 7.865 7.865 0 01-7.856-7.856A8.142 8.142 0 0112.093.12 14.93 14.93 0 009.999 0C4.477.001 0 4.478 0 10.001 0 15.523 4.477 20 9.999 20z"/>
 	</g>
+    <g id="icon-row">
+        <rect width="18" height="6" rx="2"/>
+        <rect y="16" width="18" height="6" rx="2"/>
+        <rect y="8" width="18" height="6" rx="2"/>
+    </g>
+
+     <g id="icon-col">
+        <rect width="6" height="6" rx="2"/>
+        <rect x="16" width="6" height="6" rx="2"/>
+        <rect x="8" width="6" height="6" rx="2"/>
+        <rect y="16" width="6" height="6" rx="2"/>
+        <rect x="16" y="16" width="6" height="6" rx="2"/>
+        <rect x="8" y="16" width="6" height="6" rx="2"/>
+        <rect y="8" width="6" height="6" rx="2"/>
+        <rect x="16" y="8" width="6" height="6" rx="2"/>
+        <rect x="8" y="8" width="6" height="6" rx="2"/>
+    </g>
 </svg>
 
 	<div class="container container--inner">
@@ -94,7 +111,7 @@
 					        </li>
 					    </ul>
 				    </div>
-				    <a href="" class="btn btn--write">Напишіть нам</a>
+				    <button class="btn btn--write">Напишіть нам</button>
 
 				    <div class="main-header__content">
 	                    <div class="main-header__button">
@@ -140,114 +157,161 @@
 			</div>
 		</header>
 
-		<section class="page--news">
+		<section class="blog">
 			<div class="container">
 				<ul class="breadcrumbs__list breadcrumbs__list--inner"> 
 	              <li><a href="">Головна</a></li>
 	              <li>Новини</li>
                 </ul>
-                <h3 class="subtitle subtitle--inner">Новини</h3>
-				<div class="blog__wrap">
-					<div class="blog__item">
-						<a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
-						<a href="">
-							<h3 class="blog__title">Some interesting title of a news</h3>
-						</a>	
-						<div class="blog__block">
-							<p class="blog__date">21 бер 2021</p>
-				 		    <p class="blog__col">Сергій миколєнко</p>
-						</div>
-						<div class="blog__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-						</div>
-						<div class="blog__row">
-							<a href="" class="btn btn--details">Читати далі</a>
-							<div class="blog__like">
-								<svg viewBox="0 0 15 20">
-									<use xlink:href="#icon-like"></use>
-								</svg>
-								<p class="blog__count">12</p>
-							</div>
-						</div>
-					</div><!--end blog__item-->
-					<div class="blog__item">
-						<a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
-						<a href="">
-							<h3 class="blog__title">Some interesting title of a news</h3>
-						</a>	
-						<div class="blog__block">
-							<p class="blog__date">21 бер 2021</p>
-				 		    <p class="blog__col">Сергій миколєнко</p>
-						</div>
-						<div class="blog__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-						</div>
-						<div class="blog__row">
-							<a href="" class="btn btn--details">Читати далі</a>
-							<div class="blog__like">
-								<svg viewBox="0 0 15 20">
-									<use xlink:href="#icon-like"></use>
-								</svg>
-								<p class="blog__count">11</p>
-							</div>
-						</div>
-					</div><!--end blog__item-->
-					<div class="blog__item">
-						<a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
-						<a href="">
-							<h3 class="blog__title">Some interesting title of a news</h3>
-						</a>	
-						<div class="blog__block">
-							<p class="blog__date">21 бер 2021</p>
-				 		    <p class="blog__col">Сергій миколєнко</p>
-						</div>
-						<div class="blog__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-						</div>
-						<div class="blog__row">
-							<a href="" class="btn btn--details">Читати далі</a>
-							<div class="blog__like">
-								<svg viewBox="0 0 15 20">
-									<use xlink:href="#icon-like"></use>
-								</svg>
-								<p class="blog__count">5</p>
-							</div>
-						</div>
-					</div><!--end blog__item-->
-					<div class="blog__item">
-						<a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
-						<a href="">
-							<h3 class="blog__title">Some interesting title of a news</h3>
-						</a>	
-						<div class="blog__block">
-							<p class="blog__date">21 бер 2021</p>
-				 		    <p class="blog__col">Сергій миколєнко</p>
-						</div>
-						<div class="blog__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-						</div>
-						<div class="blog__row">
-							<a href="" class="btn btn--details">Читати далі</a>
-							<div class="blog__like">
-								<svg viewBox="0 0 15 20">
-									<use xlink:href="#icon-like"></use>
-								</svg>
-								<p class="blog__count">126</p>
-							</div>
-						</div>
-					</div><!--end blog__item-->
-				</div><!--end blog__wrap-->
-				<nav class="navigation pagination" role="navigation">
-	                <div class="nav-links">
-	                	<span class="page-numbers current">1</span>
-	                    <a class="page-numbers" href="">2</a>
-	                    <a class="page-numbers" href="">3</a>
-	                    <span class="page-numbers dots">…</span>
-	                    <a class="page-numbers" href="">6</a>
-	                    <a class="page-numbers" href="">7</a>
-	                </div>
-	            </nav>
-			</div>
+                <div class="blog__holder">
+                    <h3 class="subtitle subtitle--inner">Новини</h3>
+                    <div class="blog__inner">
+                        <button class="blog__elem blog__elem--row">
+                            <svg viewBox="0 0 18 22">
+                                <use xlink:href="#icon-row"></use>
+                            </svg>
+                        </button>
+                        <button class="blog__elem blog__elem--col blog__elem--active">
+                            <svg viewBox="0 0 22 22">
+                                <use xlink:href="#icon-col"></use>
+                            </svg>
+                        </button>
+                    </div>
+			     </div>
+
+                 <div class="blog__wrap">
+                    <div class="blog__item">
+                        <a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
+                        <div class="blog__content">
+                            <a href="" class="blog__box">
+                                <h3 class="blog__title">Some interesting title of a news</h3>
+                            </a>   
+                            <div class="blog__block">
+                                <p class="blog__date">21 бер 2021</p>
+                                <p class="blog__col">Сергій миколєнко</p>
+                                <div class="blog__like blog__like--row">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            </div>
+                            <div class="blog__row">
+                                <a href="" class="btn btn--details">Читати далі</a>
+                                <div class="blog__like">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end blog__item-->
+                    <div class="blog__item">
+                        <a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
+                        <div class="blog__content">
+                            <a href="" class="blog__box">
+                                <h3 class="blog__title">Some interesting title of a news</h3>
+                            </a>   
+                            <div class="blog__block">
+                                <p class="blog__date">21 бер 2021</p>
+                                <p class="blog__col">Сергій миколєнко</p>
+                                <div class="blog__like blog__like--row">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            </div>
+                            <div class="blog__row">
+                                <a href="" class="btn btn--details">Читати далі</a>
+                                <div class="blog__like">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end blog__item-->
+                    <div class="blog__item">
+                        <a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
+                       <div class="blog__content">
+                            <a href="" class="blog__box">
+                                <h3 class="blog__title">Some interesting title of a news</h3>
+                            </a>   
+                            <div class="blog__block">
+                                <p class="blog__date">21 бер 2021</p>
+                                <p class="blog__col">Сергій миколєнко</p>
+                                <div class="blog__like blog__like--row">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            </div>
+                            <div class="blog__row">
+                                <a href="" class="btn btn--details">Читати далі</a>
+                                <div class="blog__like">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end blog__item-->
+                    <div class="blog__item">
+                        <a href="" class="blog__image" style="background-image: url(img/blog-pic.png);"></a>
+                       <div class="blog__content">
+                            <a href="" class="blog__box">
+                                <h3 class="blog__title">Some interesting title of a news</h3>
+                            </a>    
+                            <div class="blog__block">
+                                <p class="blog__date">21 бер 2021</p>
+                                <p class="blog__col">Сергій миколєнко</p>
+                                <div class="blog__like blog__like--row">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                            <div class="blog__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                            </div>
+                            <div class="blog__row">
+                                <a href="" class="btn btn--details">Читати далі</a>
+                                <div class="blog__like">
+                                    <svg viewBox="0 0 15 20">
+                                        <use xlink:href="#icon-like"></use>
+                                    </svg>
+                                    <p class="blog__count">12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end blog__item-->
+                </div><!--end blog__wrap-->
+                <nav class="navigation pagination" role="navigation">
+                    <div class="nav-links">
+                        <span class="page-numbers current">1</span>
+                        <a class="page-numbers" href="">2</a>
+                        <a class="page-numbers" href="">3</a>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="">6</a>
+                        <a class="page-numbers" href="">7</a>
+                    </div>
+                </nav>
+            </div>
 		</section>
 
 		<footer class="main-footer">
@@ -292,6 +356,52 @@
 			</div>
 		</footer>
 	</div>
+
+	<div class="overlay overlay-request">
+        <div class="inner-overlay inner-request">
+            <div class="overlay-close"></div>
+            <div class="inner__box">  
+                <h3 class="request__subtitle">Напишіть нам</h3>
+                <div class="request__wrap-error">
+                    <p class="request__error request__fail-surname" style="display: none;">Некоректне повідомлення</p>
+                </div>
+                <form action="" class="request__form">
+                    <div class="request__wrap">
+                        <div class="request__item">
+                            <div class="request__inner">
+                                <label for="r_fio" class="request__label">Фио</label>
+                                <p class="request__info">Не обов’язково</p>
+                            </div>
+                            <input class="input" name="fio" id="r_fio" type="text">
+                       </div>
+                       <div class="request__item">
+                            <div class="request__inner">
+                                <label for="r_phone" class="request__label">Телефон</label>
+                                <p class="request__info">Не обов’язково</p>
+                            </div>
+                            <input class="input" name="phone" id="r_phone" type="tel">
+                        </div>
+                        <div class="request__item">
+                            <div class="request__inner">
+                                <label for="r_email" class="request__label">Емейл</label>
+                                <p class="request__info">Не обов’язково</p>
+                             </div>
+                             <input class="input" name="email" id="r_email" type="email">
+                         </div>
+                        <div class="request__item request__item--block">
+                            <div class="request__inner">
+                                <label for="r_msg" class="request__label">Повідомлення</label>
+                                <p class="request__info">Обов’язково</p>
+                            </div>
+                            <textarea class="input input--area" name="name" id="r_msg"></textarea>
+                        </div>
+                    </div>
+                    <div>капча</div>
+                    <button id="btn--request" class="btn btn--send">Надіслати повідомлення</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
