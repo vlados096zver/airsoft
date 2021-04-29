@@ -1580,7 +1580,7 @@ img {
 	transform: translate(-50%, -50%);
 	width: 27px;
 	height: 30px;
-	background-image: url(../img/icons/play.svg);
+	background-image: url(img/icons/play.svg);
 }
 
 .video__item:hover:after {

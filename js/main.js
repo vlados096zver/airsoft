@@ -30,15 +30,10 @@ $('.btn--write').on('click', function (e) {
     $('.overlay-request').addClass('overlay-active');
 });
 
-$('.overlay-close').click(function () {
-    var overlay = $(this).parents('.overlay');
-    overlay.removeClass('overlay-active');
-});
-
 $('body').on('click', function (e) {
-    if ($(e.target).is('.overlay-request, .overlay-video')) {
+    if ($(e.target).is('.overlay-request, .overlay-video, .overlay-close')) {
         $('.overlay-request').removeClass('overlay-active');
-         $('.overlay-video').removeClass('overlay-active');
+        $('.overlay-video').removeClass('overlay-active');
         $('.inner__video iframe').remove();
     }
 });
@@ -62,7 +57,7 @@ sliderInfo.slick({
     prevArrow: '<button class="info__arrow info__arrow--dir_left"></div>',
     nextArrow: '<button class="info__arrow info__arrow--dir_right"></button>',
     dots: false,
-    dotsClass: 'video__dots-list',
+    dotsClass: 'info__dots-list',
     responsive: [
         {
             breakpoint: 1340,
@@ -132,6 +127,24 @@ sliderVideo.slick({
     ]
 });
 
+ function ChangeStateArrow(cols, dots) {
+    let count = $(cols).length;
+   var resizeTimeout;
+    $(window).on('resize', function() {
+      let win = $(this);
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function() {
+        if ((win.width() <= 1351 && count > 3) || (win.width() <= 955 && count > 2) || (win.width() <= 645 && count > 1)) {
+          $(dots).show();
+        } else {
+          $(dots).hide();
+        }
+      }, 100);
+    }).trigger('resize', dots);
+  }
+
+ChangeStateArrow('.video__item', '.video__dots-list');
+
 $('.blog__elem').on('click', function () {
     let elems = $('.blog__elem');
    elems.each(function(index, item) {
@@ -168,9 +181,8 @@ $('.block__all').on('click', function () {
     $('.block__link').show();
 });
 
-const linkAll = $('.block__link');
-
 function showLink() {
+const linkAll = $('.block__link');
 
     linkAll.each(function(index, item) {
       if (index > 4) {
@@ -200,7 +212,6 @@ function showLink() {
             'display': 'none'
           });
     }
-
 }
 
 showLink();
